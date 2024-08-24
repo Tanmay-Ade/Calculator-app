@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#calculator {
+  height: 100%;
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#outline {
+  height: 30rem;
+  width: 25rem;
+  padding: 20px 15px;
+}
+
+#num {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.theme {
+  position: absolute;
+  right: 70px;
+  font-size: 9px;
+  color: white;
+}
+
+#slider {
+  position: relative;
+  width: 45px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: hsl(223, 31%, 20%);
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+#circle {
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  top: 3px;
+  left: 5px;
+  border-radius: 50%;
+  background-color: hsl(6, 63%, 50%);
+}
+
+/* PanelValue */
+
+#panelValue {
+  width: 100%;
+  padding: 25px;
+  margin: 15px 0;
+  background-color: hsl(224, 36%, 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: end;
+  border: none;
+}
+
+/* Keys */
+
+#keys {
+  width: 100%;
+  height: 74%;
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: hsl(30, 25%, 89%);
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid hsl(28, 16%, 65%);
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(221, 14%, 31%);
+}
+
+#keys button:nth-child(4) {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  border-bottom: 3px solid hsl(224, 28%, 35%);
+}
+
+#keys button:nth-last-child(2) {
+  grid-column: span 2; 
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  border-bottom: 3px solid hsl(224, 28%, 35%);
+}
+
+#keys button:last-child {
+  grid-column: span 2;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  border-bottom: 3px solid hsl(6, 70%, 34%);
+}
+
